@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .main-content{
+                display: grid;
+                min-height: 1000px;
+                grid-template-columns: 300px 700px;
+                width: 90%;
+                margin: 20px auto;
+            }
+            .left-section{
+                background-color: black;
+                grid-column: 1;
+                text-align: center;
+                color: gray;
+                height: 100%;
+            }
+            .right-section{
+                background-color: rgb(241, 203, 145);
+               grid-column-start: 1/span 2;
+
+            }
+            img{
+                padding: 1rem;
+                display:block;
+                border-radius: 30%;
+                border: 5px white solid;
+                width: 60%;
+                /* margin-left: auto;
+                margin-right: auto; */
+                margin: auto;
+            }
+            h2.name{
+                font-size: 1.2rem;
+                font-weight: 700;
+
+                letter-spacing: 0.2px;
+                padding: 0.8rem;
+                text-transform: uppercase;
+            }
+            h4.designation{
+                font-size: 1rem;
+                text-transform: uppercase;
+                padding-bottom: 0.5rem;
+            }
+            p.description{
+                font-size: 0.75rem;
+                text-align: center;
+                padding: 1rem;
+                color:gray
+            }
+            div.social-media{
+                display: flex;
+                justify-content: space-around;
+                list-style-type: none;
+            }
+            div.skills{
+                font-size: 00.75rem;
+                text-transform: uppercase;
+                padding: 1rem 0.5rem 1rem 0.5rem;
+            }
+            div.skill-name{
+                font-size: 0.75rem;
+                text-align: left;
+                padding-bottom: 0.5rem;
+            }
+            .progress-bar{
+                border: 1px white solid;
+                height: 4px;
+            }
+            div.right-main-content{
+                padding: 2rem 3rem 2rem 3rem;
+            }
+            h2.right-title{
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding: 0.5rem;
+            }
+            h3.inner-title{
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding: 00.5rem;
+            }
+            @media (max-width: 674px) {
+  .main-content { grid-template-columns: repeat(1, 1fr); }
+}
+
+
+        </style>
+    </head>
+    <body>
+        <main class="main-content">
+            <section class="left-section">
+                <img src="student3.jpeg" alt="profile photo">
+                <h2 class="name">prabha patel</h2>
+                <h4 class="designation">Full Stack Developer</h4>
+                <p class="description">description</p>
+                <div class="social-media">
+                    <li class="icon"><a href="https://www.linkedin.com/in/aman-kumar-451398183/"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="icon"><a href="https://www.facebook.com/aman.tiwari.7140"><i class="fa fa-facebook"></i></a></li>
+                    <li class="icon"><a href="https://github.com/aman01197kumar"><i class="fa fa-github"></i></a></li>
+                </div>
+                <h4><i class="fa fa-envelope">prabhapatel666@gmail.com</i></h4>
+                <h4><i class="fa fa-phone">+91-8269527514</i></h4>
+                <div class="skills">
+                    <h2>skills</h2>
+                    <div class="skill-name">
+                        <div class="skill-item">
+                            <h4>html</h4>
+                            <progress class="progress-bar" value="90" max="100">90%</progress>
+                        </div>
+                        <div class="skill-item">
+                            <h4>css</h4>
+                            <progress class="progress-bar" value="85" max="100">85%</progress>
+                        </div>
+                        <div class="skill-item">
+                            <h4>javascript</h4>
+                            <progress class="progress-bar" value="60" max="100">60%</progress>
+                        </div>
+                    </div>
+                </section>
+            <section class="right-section">
+                <div class="right-main-content">
+                    <section class="about sec">
+                        <h2 class="right-title">about me</h2>
+                        <p>I am a rough, compassionate and desperate learner. I always believe in independency and that helps me to learn, implement and grow more.</p>
+                    </section>
+                    <section class="education sec">
+                        <h2 class="right-title">education</h2>
+                        <h3 class="inner-title">Diploma</h3>
+                        <p>gov.polytechnic college ,panna(M.P)<br>2014-2016</p>
+                        <h3 class="inner-title">Intermediate</h3>
+                        <p>Saraswati h.s.school ,madhaypradesh<br>2011-2012</p>
+                        <h3 class="inner-title">College</h3>
+                        <p>Mits Gwalior ,M.P.<br>2016-2019</p>
+                    </section>
+                    <section class="experience sec">
+                        <h2 class="right-title">Experience</h2>
+                        <h3 class="inner-title">Tech Artist</h3>
+
+                    </section>
+                    <section class="co-curriculum sec">
+                        <h3 class="inner-title">hobbies</h3>
+                        <ul>
+                            <li>Playing Basketball</li>
+                            <li>Reading books</li>
+                            <li>Watching researching videos</li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
